@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $TEXT_DEFAULT;
+    :visited {
+        color: $TEXT_DEFAULT;
+    }
+}

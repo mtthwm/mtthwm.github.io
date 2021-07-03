@@ -1,0 +1,18 @@
+.navbar-link {
+    width: 20%; 
+    margin: 0px; 
+    text-align: center;
+    line-height: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    background: linear-gradient(90deg, $ABOUT_PRIMARY 0% 20%, $SKILLS_PRIMARY 20% 40%, $EDUCATION_PRIMARY 40% 60%, $EXPERIENCE_PRIMARY 60% 80%, $PROJECTS_PRIMARY 80%);  
+}

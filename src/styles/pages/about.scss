@@ -1,0 +1,9 @@
+@import '../components/header';
+@import '../reset.scss';
+@import '../variables.scss';
+@import '../components/navbar.scss';
+@import '../components/who.scss';
+
+.about-background {
+    background-color: $ABOUT_PRIMARY;
+}
