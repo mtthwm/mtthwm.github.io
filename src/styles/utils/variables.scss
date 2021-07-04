@@ -5,5 +5,17 @@ $EXPERIENCE_PRIMARY: rgba(244,162,97,1);
 $PROJECTS_PRIMARY: rgba(231,111,81,1);
 
 $LIGHT: rgb(225, 242, 254);
+$WHITE: #ffffff;
 
 $TEXT_DEFAULT: #000000;
+
+$GRID_COLUMN_NUMBER: 12;
+
+$GRID-BREAKPOINTS: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

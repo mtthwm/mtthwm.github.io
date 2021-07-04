@@ -1,0 +1,77 @@
+
+$DIRECTIONS: ('top': 't', 'right': 'r', 'bottom': 'b', 'down': 'd');
+$MARGIN-PADDING-PIXEL: 8;
+
+@for $num from 0 through 5 {
+    $AMOUNT: #{$num * $MARGIN-PADDING-PIXEL}px;
+    .p#{$num} {
+        padding: $AMOUNT; 
+    }
+    .m#{$num} {
+        margin: $AMOUNT; 
+    }
+
+    // X and Y
+    .px-#{$num} {
+        padding-left: $AMOUNT; 
+        padding-right: $AMOUNT; 
+    }
+    .mx-#{$num} {
+        margin-left: $AMOUNT; 
+        margin-right: $AMOUNT;
+    }
+    .py-#{$num} {
+        padding-top: $AMOUNT; 
+        padding-bottom: $AMOUNT;
+    }
+    .my-#{$num} {
+        margin-top: $AMOUNT; 
+        margin-bottom: $AMOUNT;
+    }
+    @each $name, $dir in $DIRECTIONS {
+        .p#{$dir}-#{$num} {
+            padding-#{$name}: $AMOUNT; 
+        }
+        .m#{$dir}-#{$num} {
+            margin-#{$name}: $AMOUNT; 
+        }
+    }
+}
+
+@each $name, $dir in $DIRECTIONS {
+    .p#{$dir}-auto {
+        padding-#{$name}: auto; 
+    }
+    .m#{$dir}-auto {
+        margin-#{$name}: auto; 
+    }
+}
+
+.px-auto {
+    padding-left: auto; 
+    padding-right: auto; 
+}
+.mx-auto {
+    margin-left: auto; 
+    margin-right: auto;
+}
+.py-auto {
+    padding-top: auto; 
+    padding-top: auto;
+}
+.my-auto {
+    margin-top: auto; 
+    margin-top: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}

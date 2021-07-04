@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-auto-flow: row;
+}
+
+@for $num from 1 through $GRID_COLUMN_NUMBER {
+    @each $name, $size in $GRID_BREAKPOINTS {
+        @media (min-width: $size) {
+            .col-#{$name}-#{$num} {
+                grid-column: span #{$num};
+                flex-direction: column;
+
+                @for $inner_num from 1 through $GRID_COLUMN_NUMBER {
+                    &.col-#{$name}-start-#{$inner_num} {
+                        grid-column: #{$inner_num} / span #{$num};
+                    }
+                }
+            }    
+        }    
+    }
+}

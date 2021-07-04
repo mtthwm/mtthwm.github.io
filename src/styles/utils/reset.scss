@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $TEXT_DEFAULT;
+    :visited {
+        color: $TEXT_DEFAULT;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
